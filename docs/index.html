@@ -467,26 +467,26 @@
                                     <h3>Systems and Components</h3>
                                     <img class="img-fluid img-centered" src="assets/img/portfolio/droneOpened.JPG">
                                     <h5>Controls</h5>
-                                    <ul>
+                                    <ul class="text-left">
                                         <li>Flight Controller (FC): Microcontroller with an inertial measurement unit (gyroscope and accelerometer) that compares an estimate of the attitude rate to the desired attitude rate specified by the user.  A PID algorithm attempts to reduce the error between the desired attitude rate and the estimated attitude rate by sending PWM signals to the Electronic Speed Controllers (ESCs).  Issues with firmware flashing and availability of features on new hardware prompted the switch from Naze32 Rev6 to Bardwell F4 V2 All-In-One.</li>
                                         <li>Receiver (RX): Antennas decode transmitter radio signals and pass them to the flight controller.  Switched from FlySky FS-R6B to FrSky X4-RSB for reliable range, low latency, and compatibility with Received Signal Strength Indicator (RSSI) features.</li>
                                         <li>Transmitter (TX): Reads positions of joysticks, potentiometers, and switches, then sends them to the receiver.  Switched from FlySky FS-T6 to FrSky Taranis QX7 for reliable range and compatibility with RSSI.</li>
                                     </ul>
                                     <h5>Vision</h5>
-                                    <ul>
+                                    <ul class="text-left">
                                         <li>Camera: Mounted at an angle so that the camera stays pointed ahead while the quadcopter is tilted forward.  Switched from Eachine 1000TVL to RunCam Micro Eagle for a wider field of view and better image quality.</li>
                                         <li>Video Transmitter (VTX): Takes the video signal with the overlain On Screen Display from the FC and broadcasts it at a configurable frequency band and channel.  Upgraded from Eachine VTX03 to the Eachine TX805 for up to 800mW of output power, access to different styles of antennas, and compatibility with SmartAudio™. </li>
                                         <li>Goggles & Video Receiver: Collects signal from VTXs tuned to the receiver frequency band and channel and displays the video feed.</li>
                                         <li>On Screen Display (OSD): Overlays useful information on the video feed such as battery voltage, current draw, RSSI value, mAh drawn, and the total flight time.</li>
                                     </ul>
                                     <div class="row">
-                                        <div class="col-lg-4 mr-auto"><img class="img-fluid" src="assets/img/portfolio/noOSD.png" alt="" />
+                                        <div class="col-lg-4 ml-auto"><img class="img-fluid" src="assets/img/portfolio/noOSD.png" alt="" />
                                             <p>Video feed without Betaflight OSD</p></div>
                                         <div class="col-lg-4 mr-auto"><img class="img-fluid" src="assets/img/portfolio/wOSD.png" alt="" />
                                             <p>Video feed with Betaflight OSD</p></div>
                                     </div>
                                     <h5>Power Supply and Distribution</h5>
-                                    <ul>
+                                    <ul class="text-left">
                                         <li>Power Distribution Board (PDB): Simplifies assembly by connecting battery terminals to ESC leads and providing voltage regulators for sensitive electronics.  HobbyMate XT60 board was made redundant after switching to Bardwell F4 All-In-One with built-in PDB.</li>
                                         <li>Electronic Speed Controller (ESC): Converts raw DC battery voltage and PWM signal from the flight controller to a 3 phase AC sine wave for each BLDC motor.  Racerstar RS 4-in-1 ESC was used to simplify assembly and reduce cost.</li>
                                         <li>Motors and Propellers: The 3 stator leads connected to the ESC produce a rotating magnetic field that pulls the rotor around in a circle.  High KV motors are better suited to smaller propellers because they provide more RPM per volt applied.  Tri-blade propellers offer a suitable compromise between air traction and efficiency.  Racerstar BR2205 2300KV motors are paired with 5050 tri-blade propellers.</li>
@@ -494,7 +494,7 @@
                                     </ul>
                                     <img class="img-fluid img-centered" src="assets/img/portfolio/schematic.png">
                                     <h5>Misc.</h5>
-                                    <ul>
+                                    <ul class="text-left">
                                         <li>Frame: Precision CNC carbon fiber plates and aluminium standoffs are lightweight, simplify assembly, offer high resistance to crashes, and are economically priced.  </li>
                                         <li>Flight Camera: A GoPro Hero Session 4 is attached to the front of the drone using a flexible 3d printed mount.  Recorded footage from the FPV feed can be unacceptably grainy and vulnerable to interference.  The flight camera records high definition 1080p SuperView ™ at 48 FPS which is more suitable for aerial cinematography.</li>
                                     </ul>
