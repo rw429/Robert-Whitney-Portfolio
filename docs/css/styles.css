@@ -10188,18 +10188,18 @@ transition: opacity 0.5s  !important;
 }
 /* MY CODE */
 
-header.masthead {
+/*header.masthead {
   padding-top: 10.5rem;
   padding-bottom: 6rem;
   text-align: center;
-  color: #fff;
+  color: #fff;*/
   /*background-image: url("../assets/img/xflrStreamVisualization_5alpha.PNG");*/
 /*  background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
-  background-size: cover;*/
-}
-header.masthead .masthead-subheading {
+  background-size: cover;
+}*/
+/*header.masthead .masthead-subheading {
   font-size: 1.5rem;
   font-style: italic;
   line-height: 1.5rem;
@@ -10231,7 +10231,8 @@ header.masthead .masthead-heading {
     line-height: 4.5rem;
     margin-bottom: 4rem;
   }
-}
+}*/
+
 #portfolio .portfolio-item {
   max-width: 25rem;
   margin-left: auto;
