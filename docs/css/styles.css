@@ -10137,7 +10137,7 @@ img::-moz-selection {
 }
 
 /* MY CODE */
-.carousel { z-index: -99; } /* keeps this behind all content */
+/*.carousel { z-index: -99; }
 .carousel .item {
 position: fixed; 
  opacity: 0;
@@ -10176,7 +10176,7 @@ opacity: 1 !important;
 -ms-transition: opacity 0.5s  !important;
 -o-transition: opacity 0.5s  !important;
 transition: opacity 0.5s  !important;
-}
+}*/
 /* MY CODE */
 
 header.masthead {
