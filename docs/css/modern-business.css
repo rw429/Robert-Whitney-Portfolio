@@ -65,6 +65,7 @@ body {
   margin-left: 1rem;
   margin-right: 1rem;
   max-width: 80vw;
+  text-align: center;
 }
 .portfolio-modal .modal-content {
   padding-top: 6rem;
