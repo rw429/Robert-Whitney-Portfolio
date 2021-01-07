@@ -62,7 +62,8 @@ body {
 }
 
 .portfolio-modal .modal-dialog {
-  margin: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   max-width: 80vw;
 }
 .portfolio-modal .modal-content {
