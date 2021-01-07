@@ -30,8 +30,8 @@ body {
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
   display: flex;
   position: absolute;
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   background: rgba(254, 209, 54, 0.9);
   align-items: center;
   justify-content: center;
@@ -63,7 +63,7 @@ body {
 
 .portfolio-modal .modal-dialog {
   margin: 1rem;
-  max-width: 100vw;
+  max-width: 80vw;
 }
 .portfolio-modal .modal-content {
   padding-top: 6rem;
