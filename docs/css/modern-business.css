@@ -100,3 +100,7 @@ body {
 .portfolio-modal .close-modal:hover {
   opacity: 0.3;
 }
+
+p {
+    text-indent:40px;
+}
