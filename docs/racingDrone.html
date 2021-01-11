@@ -225,41 +225,48 @@
                               <h2 class="text-uppercase">The Build</h2>
                               <img class="img-fluid" src="img/portfolio/racingDrone/droneOpened.JPG" alt="" />
                               <h4 class="text-uppercase">Requirements</h4>
-                              <p></p>
-                              <ul class="text-left">
-                                  <li>Modular, yet robust construction to reduce effects of crashing</li>
-                                  <li>Sufficient power to weight ratio to perform acrobatic maneuvers</li>
-                                  <li>Reliable transmitter-receiver communication link and FPV system with On-Screen-Display</li>
-                              </ul>
-                              <h4 class="text-uppercase">Frame</h4>
-                              <p>The frame should always be the first component to select as it constrains the options for several other parts.  Carbon fiber frames are sturdy for their weight and come with pre-drilled mounting holes, making them the superior choice.  I settled on a popular 250mm frame that had plenty of space for electronics, but later switched to another 250mm frame when the first was showing its age.</p>
-                              <!-- side by side pics of frames -->
-                              <div class="row">
-                                <div class="col-lg-4 mr-auto">
-                                  <figure class="figure">
-                                    <img src="img/portfolio/racingDrone/frame1.PNG" class="figure-img img-fluid rounded" alt="">
-                                    <figcaption class="figure-caption">The first frame</figcaption>
-                                  </figure>
-                                </div>
-                                <div class="col-lg-4 mr-auto">
-                                  <figure class="figure">
-                                    <img src="img/portfolio/racingDrone/frame2.PNG" class="figure-img img-fluid rounded" alt="">
-                                    <figcaption class="figure-caption">The frame of the current build</figcaption>
-                                  </figure>
-                                </div>
+                              <div class="row mb-4 text-left">
+                                <p></p>
+                                <ul class="text-left">
+                                    <li>Modular, yet robust construction to reduce effects of crashing</li>
+                                    <li>Sufficient power to weight ratio to perform acrobatic maneuvers</li>
+                                    <li>Reliable transmitter-receiver communication link and FPV system with On-Screen-Display</li>
+                                </ul>
                               </div>
-                              <p>The first frame saw a good number of crashes as it was the frame that I learned to fly on.  For most crashes, if a part broke, it was either a propeller breaking or some electrical connection coming undone.  Over time, the tips of the arms began to delaminate.  In addition, one bad crash bent one of the arms.  I fixed both of these issues by forcing superglue between the delaminated layers, then applying pressure to the area with a vice grip.  </p>
-                              <!-- close up pic of delamination -->
-                              <p>After enough wear, the drone began behaving erratically, twitching in the yaw direction.  Initially, I checked that the propellers were tightened, then retuned the PID controller, but to no avail.  After some more diagnosing, I determined that the wear on the frame and motors from crashing was inducing vibrations that were being picked up by the gyroscope.  The flight controller would try to correct for these vibrations and exhibit this erratic behavior.  The appropriate fix to this problem was to soft-mount the flight controller with rubber standoffs to damp out the vibrations.</p>
-                              <!-- rubber standoffs -->
-                              <p>The current build uses the second frame which was cut thicker carbon fiber for more strength.</p>
-                              <!-- second frame again -->
+                              <h4 class="text-uppercase">Frame</h4>
+                              <div class="row mb-4 text-left">
+                                <p>The frame should always be the first component to select as it constrains the options for several other parts.  Carbon fiber frames are sturdy for their weight and come with pre-drilled mounting holes, making them the superior choice.  I settled on a popular 250mm frame that had plenty of space for electronics, but later switched to another 250mm frame when the first was showing its age.</p>
+                                <div class="row">
+                                  <div class="col-lg-4 mr-auto">
+                                    <figure class="figure">
+                                      <img src="img/portfolio/racingDrone/frame1.PNG" class="figure-img img-fluid rounded" alt="">
+                                      <figcaption class="figure-caption">The first frame</figcaption>
+                                    </figure>
+                                  </div>
+                                  <div class="col-lg-4 mr-auto">
+                                    <figure class="figure">
+                                      <img src="img/portfolio/racingDrone/frame2.PNG" class="figure-img img-fluid rounded" alt="">
+                                      <figcaption class="figure-caption">The frame of the current build</figcaption>
+                                    </figure>
+                                  </div>
+                                </div>
+                                <p>The first frame saw a good number of crashes as it was the frame that I learned to fly on.  For most crashes, if a part broke, it was either a propeller breaking or some electrical connection coming undone.  Over time, the tips of the arms began to delaminate.  In addition, one bad crash bent one of the arms.  I fixed both of these issues by forcing superglue between the delaminated layers, then applying pressure to the area with a vice grip.  </p>
+                                <!-- close up pic of delamination -->
+                                <p>After enough wear, the drone began behaving erratically, twitching in the yaw direction.  Initially, I checked that the propellers were tightened, then retuned the PID controller, but to no avail.  After some more diagnosing, I determined that the wear on the frame and motors from crashing was inducing vibrations that were being picked up by the gyroscope.  The flight controller would try to correct for these vibrations and exhibit this erratic behavior.  The appropriate fix to this problem was to soft-mount the flight controller with rubber standoffs to damp out the vibrations.</p>
+                                <!-- rubber standoffs -->
+                                <p>The current build uses the second frame which was cut thicker carbon fiber for more strength.</p>
+                                <!-- second frame again -->
+                              </div>
                               <h4 class="text-uppercase">Props, motors, and ESCs</h4>
-                              <p>The size of the frame determines how big the propellers, motors, and electronic speed controllers (ESCs) need to be.  I chose 3-bladed 5" propellers because they tend to provide more 'traction' for rounding tight corners than 2-bladed propellers.  Next, I consulted the racing drone community to match my propeller selection to appropriate motors and ESCs.</p>
-                              <!-- top-down pic of drone with props -->
-                              <p>These three components were most susceptible to being damaged in crashes because they are the most exposed.  Motors and propellers are the biggest sources of vibrations on the drone and need to be replaced sometimes. Propellers are easy and cheap to replace once they are bent or broken, but motors and ESCs are more involved because they require the soldering iron.</p>
+                              <div class="row mb-4 text-left">
+                                <p>The size of the frame determines how big the propellers, motors, and electronic speed controllers (ESCs) need to be.  I chose 3-bladed 5" propellers because they tend to provide more 'traction' for rounding tight corners than 2-bladed propellers.  Next, I consulted the racing drone community to match my propeller selection to appropriate motors and ESCs.</p>
+                                <!-- top-down pic of drone with props -->
+                                <p>These three components were most susceptible to being damaged in crashes because they are the most exposed.  Motors and propellers are the biggest sources of vibrations on the drone and need to be replaced sometimes. Propellers are easy and cheap to replace once they are bent or broken, but motors and ESCs are more involved because they require the soldering iron.</p>
+                              </div>
                               <h4 class="text-uppercase">Electronics</h4>
-                              <p>RX,TX, flight controller, fpv system</p>
+                              <div class="row mb-4 text-left">
+                                <p>RX,TX, flight controller, fpv system</p>
+                              </div>
                               <!-- block diagram? -->
                               <button class="btn btn-primary" data-dismiss="modal" type="button">
                                   <i class="fas fa-times mr-1"></i>
