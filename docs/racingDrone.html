@@ -259,13 +259,17 @@
                               </div>
                               <h4 class="text-uppercase">Props, motors, and ESCs</h4>
                               <div class="row mb-4 text-left">
-                                <p>The size of the frame determines how big the propellers, motors, and electronic speed controllers (ESCs) need to be.  I chose 3-bladed 5" propellers because they tend to provide more 'traction' for rounding tight corners than 2-bladed propellers.  Next, I consulted the racing drone community to match my propeller selection to appropriate motors and ESCs.</p>
+                                <p>The size of the frame determines how big the propellers, motors, and electronic speed controllers (ESCs) need to be.  I chose 3-bladed 5" propellers because they tend to provide more 'traction' for rounding tight corners than 2-bladed propellers.  Next, I consulted the racing drone community to match my propeller selection to appropriate motors, ESCs, and batteries.</p>
                                 <!-- top-down pic of drone with props -->
                                 <p>These three components were most susceptible to being damaged in crashes because they are the most exposed.  Motors and propellers are the biggest sources of vibrations on the drone and need to be replaced sometimes. Propellers are easy and cheap to replace once they are bent or broken, but motors and ESCs are more involved because they require the soldering iron.</p>
+                                <p>Of all the upgrades to the drone, switching to a 4 cell battery (14.8 V nominal) gave the most noticeable improvement in performance.  3 cell batteries (11.1 V nominal) made the throttle response feel sluggish when compared to the 4 cell batteries.</p>
                               </div>
                               <h4 class="text-uppercase">Electronics</h4>
                               <div class="row mb-4 text-left">
-                                <p>RX,TX, flight controller, fpv system</p>
+                                <p>The FPV system, flight controller, and transmitter/receiver can be selected independently of the rest of the build because there is little interfacing between those systems.  The FPV system consists of a camera and video transmitter on the drone, in addition to a video receiver on the ground with the pilot.  The only requirement for this system is that it provides clear, low-latency video anywhere the drone goes.</p>
+                                <p>Of the dozens of flight controllers on the market, I used the J Bardwell f4 All-In-One for its abundance of features and clean layout.  It interfaces with the Betaflight Firmware Configurator seamlessly which lets me update the firmware, calibrate the accelerometer and gyroscope, tune the rates and PID controllers, arrange the On-Screen-Display, and bind switches on my transmitter to different flight modes (Arm, Acro, Auto-Level, etc.).</p>
+                                <!-- on screen display -->
+                                <!-- betaflight -->
                               </div>
                               <!-- block diagram? -->
                               <button class="btn btn-primary" data-dismiss="modal" type="button">
