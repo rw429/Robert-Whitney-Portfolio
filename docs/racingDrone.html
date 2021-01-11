@@ -234,6 +234,20 @@
                               <h4 class="text-uppercase">Frame</h4>
                               <p>The frame should always be the first component to select as it constrains the options for several other parts.  Carbon fiber frames are sturdy for their weight and come with pre-drilled mounting holes, making them the superior choice.  I settled on a popular 250mm frame that had plenty of space for electronics, but later switched to another 250mm frame when the first was showing its age.</p>
                               <!-- side by side pics of frames -->
+                              <div class="row">
+                                <div class="col-lg-4 mr-auto">
+                                  <figure class="figure">
+                                    <img src="img/portfolio/racingDrone/frame1.PNG" class="figure-img img-fluid rounded" alt="">
+                                    <figcaption class="figure-caption">The first frame</figcaption>
+                                  </figure>
+                                </div>
+                                <div class="col-lg-4 mr-auto">
+                                  <figure class="figure">
+                                    <img src="img/portfolio/racingDrone/frame2.PNG" class="figure-img img-fluid rounded" alt="">
+                                    <figcaption class="figure-caption">The frame of the current build</figcaption>
+                                  </figure>
+                                </div>
+                              </div>
                               <p>The first frame saw a good number of crashes as it was the frame that I learned to fly on.  For most crashes, if a part broke, it was either a propeller breaking or some electrical connection coming undone.  Over time, the tips of the arms began to delaminate.  In addition, one bad crash bent one of the arms.  I fixed both of these issues by forcing superglue between the delaminated layers, then applying pressure to the area with a vice grip.  </p>
                               <!-- close up pic of delamination -->
                               <p>After enough wear, the drone began behaving erratically, twitching in the yaw direction.  Initially, I checked that the propellers were tightened, then retuned the PID controller, but to no avail.  After some more diagnosing, I determined that the wear on the frame and motors from crashing was inducing vibrations that were being picked up by the gyroscope.  The flight controller would try to correct for these vibrations and exhibit this erratic behavior.  The appropriate fix to this problem was to soft-mount the flight controller with rubber standoffs to damp out the vibrations.</p>
