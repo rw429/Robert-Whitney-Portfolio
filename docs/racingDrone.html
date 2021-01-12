@@ -221,7 +221,6 @@
                   <div class="row justify-content-center">
                       <div class="col-lg-8">
                           <div class="modal-body">
-                              <!-- Project Details Go Here-->
                               <h2 class="text-uppercase">The Build</h2>
                               <img class="img-fluid" src="img/portfolio/racingDrone/droneOpened.JPG" alt="" />
                               <h4 class="text-uppercase">Requirements</h4>
@@ -250,7 +249,7 @@
                                     </figure>
                                   </div>
                                 </div>
-                                <p>The first frame saw a good number of crashes since it was the frame that I learned to fly on.  For most crashes, if a part broke, it was either a propeller breaking or an electrical connection coming undone.  Over time, the tips of the arms began to delaminate.  In addition, one bad crash bent one of the arms.  I fixed both of these issues by forcing superglue between the delaminated layers, then applying pressure to the area with a vice grip.  </p>
+                                <p>The first frame saw a good number of crashes since it was the frame that I learned to fly on.  For most crashes, if a part broke, it was either a propeller breaking or an electrical connection coming undone.  Over time, the tips of the arms began to delaminate and crack.  I fixed these issues by forcing superglue between the delaminated layers, then applying pressure to the area with a vice grip.  </p>
                                 <!-- close up pic of delamination -->
                                 <p>After enough wear, the drone began behaving erratically, twitching in the yaw direction.  Initially, I checked that the propellers were tightened, then tried retuning the PID controller, but to no avail.  After some more diagnosing, I determined that the wear on the frame and motors from crashing was inducing vibrations that were being picked up by the gyroscope.  The flight controller would try to correct for these vibrations and exhibit this erratic behavior.  The appropriate fix to this problem was to soft-mount the flight controller with rubber standoffs to damp out the vibrations.</p>
                                 <p>The current build uses the second frame which was cut from thicker sheets of carbon fiber.</p>
@@ -260,14 +259,40 @@
                               <div class="row mb-4 text-left">
                                 <p>The size of the frame determines how big the propellers, motors, and electronic speed controllers (ESCs) need to be.  I chose 3-bladed 5" propellers because they tend to provide more 'traction' for rounding tight corners than 2-bladed propellers.  Next, I consulted the racing drone community to match my propeller selection to appropriate motors, ESCs, and batteries.</p>
                                 <!-- top-down pic of drone with props -->
-                                <!-- props + motors + escs -->
+                                <div class="row">
+                                  <div class="col-lg-6 my-auto">
+                                    <figure class="figure">
+                                      <img src="img/portfolio/racingDrone/motors.PNG" class="figure-img img-fluid rounded" alt="">
+                                      <figcaption class="figure-caption text-center">EMAX ECO Series 2207 2400Kv Motors provide the right amount of torque and speed for 5" 3-bladed propellers</figcaption>
+                                    </figure>
+                                  </div>
+                                  <div class="col-lg-6 my-auto">
+                                    <figure class="figure">
+                                      <img src="img/portfolio/racingDrone/ESCs.PNG" class="figure-img img-fluid rounded" alt="">
+                                      <figcaption class="figure-caption text-center">RDQ 30A ESCs are compatible with 3-6 cell batteries and provide a smooth, linear throttle response</figcaption>
+                                    </figure>
+                                  </div>
+                                </div>
                                 <p>These components were most susceptible to being damaged in crashes because they are the most exposed.  Motors and propellers are the biggest sources of vibrations on the drone and need to be replaced sometimes. Propellers are easy and cheap to replace once they are bent or broken, but motors and ESCs are more involved because they require the soldering iron.</p>
                                 <p>Of all the upgrades to the drone, switching to a 4 cell battery (14.8 V nominal) gave the most noticeable improvement in performance.  3 cell batteries (11.1 V nominal) made the throttle response feel sluggish when compared to the 4 cell batteries.</p>
                               </div>
                               <h4 class="text-uppercase">Electronics</h4>
                               <div class="row mb-4 text-left">
                                 <p>The FPV system, flight controller, and transmitter/receiver can be selected independently of the rest of the build because there is little interfacing between those systems.  The FPV system consists of a camera and video transmitter on the drone, in addition to a video receiver on the ground with the pilot.  The only requirement for this system is that it provides clear, low-latency video anywhere the drone goes. Similarily, the only requirement for the transmitter and receiver is that they need to have a reliable communication link, otherwise the pilot loses complete control of the drone.</p>
-                                <!-- FPV camera + transmitter + antenna -->
+                                <div class="row">
+                                  <div class="col-lg-6 my-auto">
+                                    <figure class="figure">
+                                      <img src="img/portfolio/racingDrone/camera.PNG" class="figure-img img-fluid rounded" alt="">
+                                      <figcaption class="figure-caption text-center">RunCam Micro Eagle has a wide field of view, crisp image, and automatically adjusts to changing light conditions</figcaption>
+                                    </figure>
+                                  </div>
+                                  <div class="col-lg-6 my-auto">
+                                    <figure class="figure">
+                                      <img src="img/portfolio/racingDrone/VTX.PNG" class="figure-img img-fluid rounded" alt="">
+                                      <figcaption class="figure-caption text-center">Eachine TX805 5.8 GHz 40 Channel FPV Transmitter has plenty of power output options and is compatible with SmartAudio, allowing me to configure its settings with the transmitter</figcaption>
+                                    </figure>
+                                  </div>
+                                </div>
                                 <!-- RX and TX -->
                                 <p>Of the dozens of flight controllers on the market, I used the J Bardwell f4 All-In-One for its abundance of features and clean layout.  It interfaces with the Betaflight Firmware Configurator seamlessly which lets me update the firmware, calibrate the accelerometer and gyroscope, tune the rates and PID controllers, arrange the On-Screen-Display, and bind switches on my transmitter to different flight modes (Arm, Acro, Auto-Level, etc.).</p>
                                 <figure class="figure">
