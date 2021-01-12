@@ -250,15 +250,14 @@
                                   </div>
                                 </div>
                                 <p>The first frame saw a good number of crashes since it was the frame that I learned to fly on.  For most crashes, if a part broke, it was either a propeller breaking or an electrical connection coming undone.  Over time, the tips of the arms began to delaminate and crack.  I fixed these issues by forcing superglue between the delaminated layers, then applying pressure to the area with a vice grip.  </p>
-                                <!-- close up pic of delamination -->
                                 <p>After enough wear, the drone began behaving erratically, twitching in the yaw direction.  Initially, I checked that the propellers were tightened, then tried retuning the PID controller, but to no avail.  After some more diagnosing, I determined that the wear on the frame and motors from crashing was inducing vibrations that were being picked up by the gyroscope.  The flight controller would try to correct for these vibrations and exhibit this erratic behavior.  The appropriate fix to this problem was to soft-mount the flight controller with rubber standoffs to damp out the vibrations.</p>
+                                <img class="img-fluid" src="img/portfolio/racingDrone/drone_front.jpeg" alt="" />
                                 <p>The current build uses the second frame which was cut from thicker sheets of carbon fiber.</p>
-                                <!-- second frame again -->
                               </div>
                               <h4 class="text-uppercase">Props, motors, and ESCs</h4>
                               <div class="row mb-4 text-left">
                                 <p>The size of the frame determines how big the propellers, motors, and electronic speed controllers (ESCs) need to be.  I chose 3-bladed 5" propellers because they tend to provide more 'traction' for rounding tight corners than 2-bladed propellers.  Next, I consulted the racing drone community to match my propeller selection to appropriate motors, ESCs, and batteries.</p>
-                                <!-- top-down pic of drone with props -->
+                                <img class="img-fluid" src="img/portfolio/racingDrone/drone_top_down.jpeg" alt="" />
                                 <div class="row">
                                   <div class="col-lg-6 my-auto">
                                     <figure class="figure">
@@ -293,7 +292,10 @@
                                     </figure>
                                   </div>
                                 </div>
-                                <!-- RX and TX -->
+                                <figure class="figure">
+                                  <img src="img/portfolio/racingDrone/transmitter.jpeg" class="figure-img img-fluid rounded" alt="">
+                                  <figcaption class="figure-caption text-center">The FrSky Qx7 2.4 GHz radio transmitter uses SBUS protocol to send reliable, low-latency data packets</figcaption>
+                                </figure>
                                 <p>Of the dozens of flight controllers on the market, I used the J Bardwell f4 All-In-One for its abundance of features and clean layout.  It interfaces with the Betaflight Firmware Configurator seamlessly which lets me update the firmware, calibrate the accelerometer and gyroscope, tune the rates and PID controllers, arrange the On-Screen-Display, and bind switches on my transmitter to different flight modes (Arm, Acro, Auto-Level, etc.).</p>
                                 <figure class="figure">
                                   <img src="img/portfolio/racingDrone/betaflight.PNG" class="figure-img img-fluid rounded" alt="">
