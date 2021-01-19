@@ -81,11 +81,11 @@
   <!-- Page Content -->
   <div class="container">
 
-    <h1 class="my-4" id = "about">Welcome to my Portfolio!</h1>
+    <h1 class="my-4" id = "about">Welcome!</h1>
 
     <div class="row mb-8">
         <div class="col-lg-6 ml-auto">
-            <p class="lead">My name is Robert Whitney and I'm a Master of Engineering student in the Cornell University Graduate School.  I've always been fascinated by robots, airplanes, rockets, drones, anything that moves fast!</p>
+            <p class="lead">My name is Robert Whitney.  I've recently graduated from the Master of Engineering Program at Cornell University in the Fall of 2020, a full semester early.  I've always been fascinated by robots, airplanes, rockets, drones, anything that moves fast!</p>
             <p class="lead">This portfolio showcases just a few of the projects that I have worked on, either for my education or for my own enjoyment.  I continue to dedicate time to these projects and update this website in my spare time.</p>
             <p class="lead">I am looking for a position where I can apply what skills I have mastered and continue developing new skills in robotics, controls, dynamics, and programming.</p>
             <br>
@@ -110,6 +110,43 @@
     </div>
     <!-- /.row -->
     <hr>
+
+    <!-- Contact Me -->
+    <div class="row mb-8">
+        <h1 class="my-4" id = "about">Contact Me</h1>
+        <div class="col-lg-8 mb-4">
+          <form name="sentMessage" id="contactForm" novalidate>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Full Name:</label>
+                <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                <p class="help-block"></p>
+              </div>
+            </div>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Phone Number:</label>
+                <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
+              </div>
+            </div>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Email Address:</label>
+                <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+              </div>
+            </div>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Message:</label>
+                <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+              </div>
+            </div>
+            <div id="success"></div>
+            <!-- For success/fail messages -->
+            <button type="submit" class="btn btn-primary" id="sendMessageButton">Send Message</button>
+          </form>
+        </div>
+    </div>
     <!-- Portfolio Section -->
 
     <div class="row mb-8 mt-8">
