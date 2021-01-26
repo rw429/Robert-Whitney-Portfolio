@@ -18,6 +18,7 @@
 
   <!-- icons -->
   <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
 </head>
 
@@ -74,6 +75,36 @@
     </div>
 
     <hr>
+
+    <h2>Key Features</h2>
+    <div class = "row mt-4">
+      <div class = "col-lg-3 text-center mx-auto">
+        <i class="bi bi-speedometer2" style="font-size: 6rem;"></i> <br>
+        <p class="lead" style="text-indent:0px;">Max Speed : 15 m/s (~30 mph)</p>
+      </div>
+      <div class = "col-lg-3  text-center mx-auto">
+        <i class="bi bi-minecart-loaded" style="font-size: 6rem;"></i> <br>
+        <p class="lead" style="text-indent:0px;">Mass : 755 g</p>
+      </div>
+      <div class = "col-lg-3 text-center mx-auto">
+        <i class="bi bi-stopwatch" style="font-size: 6rem;"></i> <br>
+        <p class="lead" style="text-indent:0px;">Flight Time : 15 mins</p>
+      </div>
+    </div>
+    <div class = "row mt-2">
+      <div class = "col-lg-3 text-center mx-auto">
+        <i class="bi bi-battery-charging" style="font-size: 6rem;"></i> <br>
+        <p class="lead" style="text-indent:0px;">Battery Voltage : 11.1 V (3s)</p>
+      </div>
+      <div class = "col-lg-3 text-center mx-auto">
+        <i class="bi bi-broadcast-pin" style="font-size: 6rem;"></i> <br>    
+        <p class="lead" style="text-indent:0px;">Radio Range : 1.6 Km</p>
+      </div>
+      <div class = "col-lg-3 text-center mx-auto">
+        <i class="fas fa-ruler" style="font-size: 6rem;"></i><br>
+        <p class="lead" style="text-indent:0px;">Wing Span : 1.47 m (58")</p>
+      </div>
+    </div>
 
     <!-- Item One -->
     <div class="row">
@@ -173,7 +204,6 @@
                   <div class="row justify-content-center">
                       <div class="col-lg-8">
                           <div class="modal-body">
-                              <!-- Project Details Go Here-->
                               <h2 class="text-uppercase">Implementing Manual Control</h2>
                               <img class="img-fluid" src="img/portfolio/autoPilot/XFLR_streamVis.PNG" alt="" />
                               <div class="row mb-4 text-left">
@@ -182,7 +212,7 @@
                               <h4>Using SBUS protocol with Arduino</h4>
                               <div class="row mb-4 text-left">
                                 <p>FrSky's SBUS protocol uses only one wire to send up to 18 channels from the radio transmitter to the receiver.  To parse these data packets, there are decoders on the market that unpack each data packet into 4 separate PWM signals for servos.  However, I will need more than 4 channels to control the aircraft, switch in and out of autopilot mode, arm and disarm the motor, etc.  Thus, I decided to use an Arduino Nano to parse the SBUS packets and write PWM signals to the servos.  A microcontroller will also be necessary for any computation involving autonomous control.</p>
-                                <p>I found this Arduino library to parse SBUS signals.  Since SBUS is an inverted serial protocol, I needed a circuit to make it compatible with the Arduino serial port.  The inverter circuit schematic below was included in the Arduino library.</p>
+                                <p>I used this Arduino library to parse SBUS signals.  Since SBUS is an inverted serial protocol, I needed a circuit to make it compatible with the Arduino serial port.  The inverter circuit schematic below was included in the Arduino library.</p>
                                 <!-- Schematic -->
                               </div>
                               <h4>Motor and Control Surfaces</h4>
